@@ -10,6 +10,7 @@ def make_array(point):
     if len(stack) < m:
         for i in range(point, n):
             stack.append(arr[i])
+            print(i)
             make_array(i)  
             stack.pop()
     else:
